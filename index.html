@@ -4,26 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ketan Jaltare – Personal Site</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 2em;
-      background-color: #f4f4f4;
-    }
-    img {
-      width: 150px;
-      border-radius: 50%;
-      margin-top: 1em;
-    }
-    a {
-      display: inline-block;
-      margin: 1em;
-      color: #0366d6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+
   <style>
     body {
       background: linear-gradient(to right, #f0f2f5, #d9e4f5);
@@ -31,61 +12,104 @@
       color: #333;
       margin: 0;
       padding: 20px;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 200px;
+      padding: 20px;
+      padding-top: 210px;
+      background: linear-gradient(to bottom, #f8f9fb, #e6ebf5);
+      border-right: 1px solid #ccc;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    .main-content {
+      margin-left: 240px;
+      padding: 20px;
+      max-width: 700px;
+      margin-right: auto;
+    }
+
+    img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 1em;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .intro-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .bio-text {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.6;
     }
   </style>
 </head>
+
 <body>
 
-<div style="text-align: center; margin-bottom: 30px;">
-  <img src="Photo.png" alt="My photo" width="180" style="border-radius: 50%; margin-bottom: 10px;" />
-  <div>
-    <a href="https://github.com/Neojaltare" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/ketanjaltare/" target="_blank">LinkedIn</a>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Navigation</h3>
+    <a href="https://github.com/Neojaltare" target="_blank"> GitHub</a>
+    <a href="https://www.linkedin.com/in/ketanjaltare/" target="_blank"> LinkedIn</a>
+    <a href="#Publication_List.pdf" target="_blank"> Publications</a>
     <a href="Ketan_Jaltare_CV_I_Neurotech.pdf" target="_blank"> My CV</a>
     <a href="Ketan_Jaltare_CV_A_NM.pdf" target="_blank"> Academic CV</a>
+
+    <h3 style="margin-top: 30px;">AI & ML Projects</h3>
+    <a href="#mech-interp">Mech Interp</a>
+    <a href="#ai-projects">Competitions</a>
+    <a href="#visualizations">Visualizations</a>
   </div>
-  <h1 style="margin-bottom: 5px;">Hi there! I'm Ketan</h1>
-  <h3 style="margin-top: 0;">Welcome to my personal webpage!</h3>
-  <p style="font-size: 1.1em; margin-top: 10px;">
-    This is where I try to bring together my various interests and share some of my work.
-  </p>
-</div>
 
-<div style="max-width: 700px; margin: 0 auto; text-align: justify; font-size: 16px; line-height: 1.6;">
-  <p>
-    Here’s a bit about who I am and what I do. I’m generally curious about most things in life,
-    but at heart (and by training), I’m a psychologist.
-  </p>
+  <!-- Main Content -->
+  <div class="main-content">
 
-  <p>
-    I started my career as a clinical psychologist back in 2013, primarily working with people
-    struggling with addictions and other comorbidities. I did that for quite a while, but my passion
-    for science and problem-solving eventually led me into research, specifically in experimental
-    psychology and cognitive neuroscience. Hence, my PhD at KU Leuven (2025).
-  </p>
+    <div class="intro-header">
+      <img src="Photo.png" alt="My photo" width="180" />
+      <h1>Hi there! I'm Ketan</h1>
+      <h3>Welcome to my personal webpage!</h3>
+      <p>This is where I try to bring together my various interests and share some of my work.</p>
+    </div>
 
-  <p>
-    During my PhD, I fell in love with electrophysiology, statistics, and signal processing.
-    Then, in 2022, during the second year of my PhD, the explosion of ChatGPT into the mainstream
-    completely captured my curiosity. Since then, I’ve spent a ridiculous amount of time learning
-    about various topics in machine learning and AI. I’m fascinated not just by working with
-    state-of-the-art models, but also by getting under the hood to understand how they work.
-  </p>
+    <div class="bio-text">
+      <p>Here’s a bit about who I am and what I do. I’m generally curious about most things in life, but at heart (and by training), I’m a psychologist.</p>
 
-  <p>
-    What excites me today is the possibility of bringing
-    all these interests together - from studying and modeling the human mind (psychology),
-    to exploring the brain (cognitive neuroscience and electrophysiology), to working with AI.
-    Despite all this, my background in clinical and experimental psychology continues to shape 
-    how I think about both neuroscience and AI. In the near future, I hope to start exploring 
-    topics like brain-computer interfaces and human-computer interaction more broadly.  
-  </p>
+      <p>I started my career as a clinical psychologist back in 2013, primarily working with people struggling with addictions and other comorbidities. I did that for quite a while, but my passion for science and problem-solving eventually led me into research, specifically in experimental psychology and cognitive neuroscience. Hence, my PhD at KU Leuven (2025).</p>
 
-  <p>
-    On this website, I share some of my work, along with my ongoing explorations into these fields.
-  </p>
-</div>
+      <p>During my PhD, I fell in love with electrophysiology, statistics, and signal processing. Then, in 2022, during the second year of my PhD, the explosion of ChatGPT into the mainstream completely captured my curiosity. Since then, I’ve spent a ridiculous amount of time learning about various topics in machine learning and AI. I’m fascinated not just by working with state-of-the-art models, but also by getting under the hood to understand how they work.</p>
 
+      <p>What excites me today is the possibility of bringing all these interests together - from studying and modeling the human mind (psychology), to exploring the brain (cognitive neuroscience and electrophysiology), to working with AI. Despite all this, my background in clinical and experimental psychology continues to shape how I think about both neuroscience and AI. In the near future, I hope to start exploring topics like brain-computer interfaces and human-computer interaction more broadly.</p>
 
+      <p>On this website, I share some of my work, along with my ongoing explorations into these fields.</p>
+    </div>
+
+  </div>
 </body>
 </html>
