@@ -40,10 +40,11 @@
     }
 
     .main-content {
-      margin-left: 240px;
+      margin-left: 240px;         /* account for sidebar */
       padding: 20px;
       max-width: 700px;
       margin-right: auto;
+      margin-left: calc(240px + (95vw - 240px - 700px) / 2);
     }
 
     img {
